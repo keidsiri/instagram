@@ -1,9 +1,9 @@
 import React from 'react';
 import { StatusBar } from 'expo-status-bar';
-import LandingScreen from './components/auth/Landing';
-import RegisterScreen from './components/auth/Register';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
+import LandingScreen from './components/auth/Landing';
+import RegisterScreen from './components/auth/Register';
 // import * as firebase from 'firebase';
 
 import firebase from "firebase/compat/app"
