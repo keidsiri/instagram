@@ -4,11 +4,17 @@ import LandingScreen from './components/auth/Landing';
 import RegisterScreen from './components/auth/Register';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import * as firebase from 'firebase'
+// import * as firebase from 'firebase';
+
+import firebase from "firebase/compat/app"
+import "firebase/compat/auth"
+import "firebase/compat/firestore"
 
 if (firebase.apps.length === 0) {
   firebase.initializeApp(firebaseConfig)
 }
+
+
 
 const Stack = createStackNavigator();
 export default function App() {
