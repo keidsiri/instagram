@@ -4,7 +4,7 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Text>Hello world This is a good start for Capstone project!! This will be fun</Text>
       <StatusBar style="auto" />
     </View>
   );
