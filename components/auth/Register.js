@@ -6,17 +6,35 @@ export class Register extends Component {
     super(props);
 
     this,state = {
-      email:'',
-      password: '';
+      email: '',
+      password: '',
       name: ''
     }
+    this.onSignUp = this.onSignUp.bind()
   }
+
+  onSignUp(){
+
+  }
+
   render() {
     return (
       <View>
         <TextInput
           placeholder='name'
           onChangeText={(name) => this.setState({name})}/>
+        <TextInput
+          placeholder='email'
+          onChangeText={(name) => this.setState({email})}/>
+        <TextInput
+          placeholder='password'
+          secureTextEntry={true}
+          onChangeText={(password) => this.setState({password})}/>
+
+      <Button>
+        onPress={() => this.onSignUp()}
+        title="Sign up"
+      </Button>
       </View>
     )
   }
